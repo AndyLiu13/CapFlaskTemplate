@@ -54,7 +54,8 @@ class ResetPasswordForm(FlaskForm):
     submit = SubmitField('Request Password Reset')
 
 class ProfileForm(FlaskForm):
-    #email = StringField('Email', validators=[DataRequired(), Email()])
+    role = SelectField('Role',choices=[("Teacher","Teacher"),("Student","Student")])
+    Gender = SelectField('Gender',choices=[("Male","Male"),("Female","Female"),("other","other")])
     fname = StringField('First Name', validators=[DataRequired()])
     lname = StringField('Last Name', validators=[DataRequired()]) 
     image = FileField("Image") 
@@ -63,8 +64,11 @@ class ProfileForm(FlaskForm):
 class PostForm(FlaskForm):
     subject = StringField('Subject', validators=[DataRequired()])
     content = TextAreaField('Post', validators=[DataRequired()])
+    content2 = TextAreaField('Post', validators=[DataRequired()])
     submit = SubmitField('Post')
 
 class CommentForm(FlaskForm):
     content = TextAreaField('Comment', validators=[DataRequired()])
     submit = SubmitField('Comment')
+
+
