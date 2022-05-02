@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<head>
+<style>
+
+    .img-container{
+        text-align:center;
+    }
+
+    .center{
+        text-align:center;
+    }
+
+    .center2{
+        text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">How would you go to school everyday?</h1>
+
+    <h2 style="text-align: center;">Bike, Bus, Walk, or Drive to school?</h2>
+<div class="img-container">
+    <img src="/static/bike.jpg" width="550" height="400" style="position:relative; left:-150px;">
+    <img src="/static/bus.jpg" width="550" height="400" style="position:relative; right:-150px;">
+    <img src="/static/walk.jpg" width="550" height="400" style="position:relative; left:-150px; top:100px;">
+    <img src="/static/drive.jpg" width="550" height="400" style="position:relative; right:-150px; top:100px;"> 
+</div>
+
+
+<div class="center">
+
+    <button type="bike" style="position:relative; right:390px; top:-400px;" onclick="location.href='/endresult'">Select Me!</button>
+
+    <button type="bus" style="position:relative; left:390px; top:-400px;" onclick="location.href='/endresult'">Select Me!</button>
+
+</div>
+
+<div class="center2">
+
+    <button type="walk" style="position:relative; right:390px; top:70px;" onclick="location.href='/endresult'">Select Me!</button>
+
+    <button type="drive" style="position:relative; left:390px; top:70px;" onclick="location.href='/driveresult'">Select Me!</button>
+</div>
+
+
+</body>
+
+{% endblock %}

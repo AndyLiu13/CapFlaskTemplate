@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<head>
+<style>
+    .img-container{
+        text-align:center;
+    }
+    .center{
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+<h1 style="text-align:center">Select where you want to be born</h1>
+
+<div class="img-container">
+    <h2 style="position: relative; left:400px">City</h2>
+<img src="/static/city.jpg" style="width:500px;height:400px;  position:relative; left:400px;">    
+
+
+<div class="img-container">
+    <img src="/static/village.jpg" style="width:500px;height:400px; position:relative; right:400px; top:-400px;">
+    <h2 style="position: relative; right:400px; top:-850px">Village</h2>
+</div>
+</div>
+
+<div class="center">
+    <button type="village" style="position:relative;top:-400px;right:400px" onclick="location.href='/village'">Select Me!</button>
+    
+    <div class="center">
+    <button type="city" style="position:relative;top:-430px; left:400px" onclick="location.href='/city'">Select Me!</button>
+    </body>
+
+</body>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+<head>
+
+    <style>
+        .img-container {
+          text-align: center;
+        }
+
+        .center{
+                text-align: center;
+        }
+      </style>
+</head>
+<body>
+<h1 style="text-align:center">Choose your planet</h1>
+
+<h2 style="text-align: center;">Mars or Earth</h2>
+
+<div class="img-container"> 
+        <img src="/static/earth.jpg" alt="earth" style="width:400px;height:400px; position:relative; left:400px;">
+<div class="img-container"> 
+        <img src="/static/mars.jpg" alt="mars" style="width:400px;height:400px; position:relative; right:400px; top:-400px;">
+</div>
+</div>
+do not pick mars
+<div class="center">
+<button type="Mars_button" style="position:relative;top:-400px;right:400px" onclick="location.href='/mars'">Select Me!</button>
+
+<div class="center">
+<button type="Earth_button" style="position:relative;top:-430px; left:400px" onclick="location.href='/earth'">Select Me!</button>
+
+</body>
+
+
+{% endblock %}

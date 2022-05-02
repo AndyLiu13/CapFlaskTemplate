@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<head>
+<style>
+    .img-container{
+        text-align: center;
+    }
+    .center{
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align:center">What type of energy would you use daily</h1>
+<div class="img-container">
+    <h2>Solar,Electric,Gas</h2>
+
+    <img src="/static/solar.jpg" style="width:400px;height:400px; position:relative; left:-100px;">
+
+    <img src="/static/electric.jpg" style="width:400px;height:400px;"> 
+
+    <img src="/static/gas.jpg" style="width:400px;height:400px; position:relative; right:-100px;">
+
+</div>
+
+<div class="center">
+    <button id="solar" type="solar" style="position:relative; left:-400px" onclick="location.href='/good'">Select Me!</button>
+
+    <button type="electric" style="position:relative; right:100" onclick="location.href='/result'">Select Me!</button>
+
+    <button type="gas" style="position:relative; right:-400px" onclick="location.href='/gasresult'">Select Me!</button>
+
+
+
+</div>
+
+
+</body>
+
+{% endblock %}

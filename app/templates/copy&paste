@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<head>
+
+</head>
+
+<body>
+
+</body>
+
+{% endblock %}
+
+
+<button type="go next" onclick="location.href='/good'">Next</button>
+
+<button type="go back" onclick="location.href='/city'">Back</button>
