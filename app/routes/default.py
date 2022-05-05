@@ -70,3 +70,6 @@ def driveresult():
 @app.route('/endresult')
 def endresult():
     return render_template('endresult.html')
+@app.route('/pictures')
+def pictures():
+    return render_template('pictures.html')

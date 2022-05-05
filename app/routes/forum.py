@@ -96,6 +96,7 @@ def postNew():
             # the right side is the data the user entered which is held in the form object.
             subject = form.subject.data,
             content = form.content.data,
+            content2 = form.content2.data,
             author = current_user.id,
             # This sets the modifydate to the current datetime.
             modifydate = dt.datetime.utcnow
