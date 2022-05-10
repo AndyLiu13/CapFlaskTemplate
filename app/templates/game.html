@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 <head>
-
+<link rel="stylesheet" href="/static/style.css">
     <style>
         .img-container {
           text-align: center;
@@ -10,12 +10,16 @@
         .center{
                 text-align: center;
         }
+        body {
+                background-image: url('https://s3.wp.wsu.edu/uploads/sites/2797/2022/03/space.jpg');
+        }
+</style>
       </style>
 </head>
 <body>
-<h1 style="text-align:center">Choose your planet</h1>
+<h1 style="text-align:center" class="whiteman">Choose your planet</h1>
 
-<h2 style="text-align: center;">Mars or Earth</h2>
+<h2 style="text-align: center;" class="whiteman">Mars or Earth</h2>
 
 <div class="img-container"> 
         <img src="/static/earth.jpg" alt="earth" style="width:400px;height:400px; position:relative; left:400px;">
